@@ -1,0 +1,99 @@
+header
+    padding-top: 7rem 
+    transition: .3s all ease-in 
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 10
+    @include breakpoint(tablet)
+        padding-top: 0
+        position: fixed
+        width: 100%
+        .bgHeader
+            transition: .7s all ease-in-out
+            background: $preto
+            border-bottom: 1px solid transparent
+            box-shadow: .4rem 0 2rem -5px rgba(0, 0, 0, 0.2)
+            padding: 1rem 0            
+        .header__logo
+            img
+                max-width: 100%
+                max-height: 50px
+    &.sticky        
+        padding-top: 0
+        position: fixed
+        width: 100%
+        .bgHeader
+            transition: .7s all ease-in-out
+            background: $preto
+            border-bottom: 1px solid transparent
+            box-shadow: .4rem 0 2rem -5px rgba(0, 0, 0, 0.2)
+            padding: 1rem 0
+        .header__logo
+            img
+                max-width: 100%
+                max-height: 50px
+    .bgHeader
+        padding: 1rem 0
+        -webkit-backdrop-filter: blur(10px)
+        backdrop-filter: blur(10px)
+    .center
+        max-width: 1180px
+    .header__logo
+        img
+            max-width: 100%
+    .container__flex
+        align-items: center
+        @include justify
+    .menu__mobile
+        background: none
+        box-shadow: none
+        border: none
+        color: $white
+        cursor: pointer
+        font-size: 3.2rem
+        display: none
+        @include breakpoint(desktop)
+            display: block
+    .site__menu        
+        @include breakpoint(desktop)           
+            width: 300px
+            position: fixed
+            top: 0
+            right: 0
+            z-index: 2000
+            padding-top: 6rem
+            background: $white
+            height: 100vh
+            -webkit-transform: translateX(110%)
+            transform: translateX(110%)
+            box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1)
+            transition: .3s all ease-in-out
+        &.active
+            opacity: 1
+            pointer-events: auto
+            transform: translateX(0%)
+            height: 100vh
+        ul
+            @include flexbox
+            gap: 2.2rem
+            @include breakpoint(desktop)
+                flex-direction: column
+                gap: 1.6rem
+                padding: 0 4rem
+            a
+                color: $white
+                transition: .2s
+                font-size: 1.6rem
+                line-height: 3rem
+                font-weight: $mediumb
+                @include breakpoint(desktop)
+                    font-size: 1.3rem
+                @include breakpoint(desktop)
+                    line-height: 3rem
+                    color: $preto
+                &:hover
+                    color: $cor1
+                &.active
+                    color: $cor1
+                    font-weight: $bold

@@ -1,0 +1,167 @@
+@import "structure/mixins"
+@import "structure/reset"
+@import "structure/fonts"
+@import "structure/animation"
+@import "structure/header"
+@import "structure/footer"
+@import "structure/botoes"
+@import "structure/formularios"
+@import "structure/pages/home"
+@import "structure/pages/intern"
+@import "structure/modais"
+@import "structure/tabs"
+@import "structure/tables"
+
+*, button, input
+	font-family: $Roboto
+	
+html
+	font-size: 62.5%
+	@include breakpoint(desktop)
+		font-size: 56.25%
+
+body
+	font-size: 1.6rem
+	width: 100%
+	min-height: 100vh
+	line-height: 1
+	position: relative
+	font-family: $Roboto
+	overflow-x: hidden
+	transition: .4s
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50%
+	background-image: url(/images/background.jpg)
+
+a, a:hover, a:focus, a:active
+	text-decoration: none	
+
+img
+	display: block
+	border: none
+
+.center
+	width: 90%
+	max-width: 1140px
+	margin: 0 auto
+	padding: 0 1.5rem
+
+.container__flex
+	@include flexbox
+
+.container__grid
+	display: -ms-grid
+	display: grid
+
+
+/*Slick Dots*/
+.slick-dots
+	bottom: -4rem!important
+
+.slick-dots li
+	width: 7px!important
+	height: 4px!important
+
+.slick-dots li button
+	width: 8px!important
+	height: 8px!important
+
+.slick-dots li button:before
+	content: ''!important
+	width: 8px!important
+	height: 8px!important
+	background: $white
+	opacity: 1!important
+
+.slick-dots li.slick-active,
+.slick-dots li.slick-active button
+	width: 8px!important
+
+.slick-dots li.slick-active button:before
+	opacity: 1!important
+	background: $cor1!important
+	width: 8px!important
+
+/*Subtitle Home*/
+.subHeader
+	text-align: center
+	color: $white
+	margin-bottom: 3.2rem
+	h2
+		font-size: 4rem
+		line-height: 4.8rem
+		letter-spacing: .005rem
+		@include breakpoint(mobile)
+			font-size: 3rem
+			line-height: 4rem
+	span
+		font-size: 1.8rem
+		line-height: 2.4rem
+
+.subHeaderIntern
+	text-align: center
+	color: $white
+	margin-bottom: 3.2rem
+	h2
+		font-size: 4rem
+		line-height: 4.8rem
+		letter-spacing: .005rem
+		font-weight: $black
+		@include breakpoint(mobile)
+			font-size: 3rem
+			line-height: 4rem
+	span
+		font-size: 1.8rem
+		line-height: 2.4rem
+
+.fancybox-button--zoom
+	display: none!important
+
+.contato__anuncio, .anuncie
+	display: none
+
+.link__whatsapp
+	position: fixed
+	z-index: 10
+	bottom: 30px
+	right: 30px
+	background: $cor8
+	color: $white
+	font-size: 4rem
+	width: 60px
+	height: 60px
+	border-radius: 50%
+	@include flexbox
+	@include center
+	align-items: center
+	transition: .2s
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2)
+	animation: pulse 1.5s infinite
+	&:before
+		content: '1'
+		position: absolute
+		background: red
+		width: 20px
+		height: 20px
+		color: $white
+		right: -8px
+		top: -4px
+		font-size: .4em
+		@include flexbox
+		@include center
+		align-items: center
+		border-radius: 50%
+	@include breakpoint(mobile)
+		bottom: 10px
+		right: 10px
+	&:hover
+		transform: scale(1.2)
+
+@keyframes pulse
+	0%
+		transform: scale(0.9)
+	60%
+		transform: scale(1)
+	100%
+		transform: scale(0.9)

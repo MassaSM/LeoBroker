@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="author" content="Agência Color" />
+	<meta name="description" content="#" />
+	<link rel="canonical" href="#" />
+	<meta name="resource-type" content="document" />
+	<meta name="content-language" content="pt-br" />
+	<meta name="revisit" content="1 day" />
+	<meta name="ICBM" content="latlong" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="DC.title" content="LeoBroker" />
+	<meta property="og:title" content="LeoBroker" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="#" />
+	<meta property="og:image" content="../images/ico-facebook.jpg" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="400" />
+	<meta property="og:url" content="" />
+	<link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.pnBOg">
+	<link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!--Open Graph data-->
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Descrição Aqui">
+	<meta property="og:title" content="LeoBroker">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:site_name" content="LeoBroker">
+	<meta property="og:image" content="../images/share-image.jpg">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="1024">
+	<meta property="og:image:height" content="1024">
+	<meta property="og:url" content="https://www.enderecoaqui.com.br/">
+	<!--Facebook-->
+	<meta property="fb:pages" content="">
+	<meta property="fb:app_id" content="">
+	<!--Twitter-->
+	<meta property="twitter:description" content="Descrição Aqui">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="LeoBroker">
+	<meta property="twitter:image" content="../images/share-image.jpg">
+	<link href="../styles/all.css" rel="stylesheet" />
+	<link href="../styles/minify/main.min.css" rel="stylesheet" />
+	<link href="../styles/jquery.fancybox.min.css" rel="stylesheet">
+	<link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"></noscript>
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"></noscript>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<title>LeoBroker</title>
+</head>	
+<body>
+	<header>
+		<div class="bgHeader">
+			<div class="center">
+				<div class="container__flex">
+					<a href="index.html" class="header__logo"><figure><img src="../images/logoLeo.png" alt="Logo LeoBroker" title="Logo LeoBroker"></figure></a>
+
+					<nav class="site__menu">
+						<ul>
+							<li><a href="quem-somos.html" class="nav__link">Quem Somos</a></li>
+							<li><a href="embarcacoes-novas.html" class="nav__link">Embarcações Novas</a></li>
+							<li><a href="seminovos.html" class="nav__link">Seminovos</a></li>	
+							<li><a href="locacao.html" class="nav__link">Locação</a></li>
+							<li><a href="turismo.html" class="nav__link">Turismo</a></li>
+							<li><a href="anuncie.html" class="nav__link">Anuncie Aqui</a></li> 
+							<li><a href="contato.html" class="nav__link">Contato</a></li>
+						</ul>
+					</nav>
+
+					<figure>
+						<img src="../images/Real-Powerboats.png" class="logoReal" alt="Logo Real Powerboats" title="Logo Real Powerboats">
+					</figure>
+
+					<button class="menu__mobile">
+						<i class="fa-regular fa-bars"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="breadcumb">
+			<div class="center">
+				<h1>Locação</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>
+
+			<div class="video__anuncio">
+				<div class="video__player">
+					<video autoplay="" muted="muted" loop="" class="video__player__video" src="/video/3364999618.mp4"></video>
+				</div>
+			</div>			
+		</section>
+
+		<section class="lista__embarcacoes locacao">
+			<div class="center">
+				<div class="container__flex">
+					<aside class="filtrar">
+						<h2>Filtrar</h2>
+
+						<form id="filtrar">
+							<div class="field">
+								<div class="select">
+									<select>
+										<option value="1">Modelo</option>
+										<option value="2">Opção 1</option>
+										<option value="3">Opção 2</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="select">
+									<select>
+										<option value="1">Quant. Quartos</option>
+										<option value="2">Opção 1</option>
+										<option value="3">Opção 2</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="select">
+									<select>
+										<option value="1">Tamanho (Pés)</option>
+										<option value="2">Opção 1</option>
+										<option value="3">Opção 2</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="select">
+									<select>
+										<option value="1">Motorização</option>
+										<option value="2">Opção 1</option>
+										<option value="3">Opção 2</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="field">
+								<p class="titulo__range">Ano</p>
+								<fieldset>
+									<input type="range" id="anoinicial" min="2000" max="2023" value="2000">
+									<input type="range" id="anofinal" min="2000" max="2023" value="2023">
+								</fieldset>
+								
+								<div class="container__flex">
+									<h3 class="ano__inicial"><span>2000</span></h3>
+									<h3 class="ano__final"><span>2023</span></h3>
+								</div>
+							</div>
+
+							<div class="field">
+								<p class="titulo__range">Preço</p>
+								<fieldset>
+									<input type="range" id="precoinicial" min="0" max="50000" value="0">
+									<input type="range" id="precofinal" min="0" max="50000" value="50000">
+								</fieldset>
+								
+								<div class="container__flex">
+									<h3 class="valor__minimo"><span>R$ 0</span></h3>
+									<h3 class="valor__maximo"><span>R$ 50000</span></h3>
+								</div>
+							</div>
+
+							<div class="fied">
+								<div class="group__field">
+									<div class="field">
+										<button class="btn__interna">Limpar</button>
+									</div>
+
+									<div class="field">
+										<button type="submit" class="btn__interna">Buscar</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</aside>
+
+					<div class="lista__tabela__embarcacoes">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr class="tr__flex">
+									<td>&nbsp;</td>
+									<td>Modelo</td>
+									<td>Fabricante</td>
+									<td>Tamanho</td>
+									<td>Ano</td>
+									<td>Motor</td>
+									<td>Código</td>
+									<td>Quartos</td>
+									<td>Preço</td>
+								</tr>
+							</thead>
+							<tbody>							  
+							  <tr class="tr__flex">
+								  <td>
+									<a href="locacao-detalhes.html">
+										<div class="img__embarcacao">
+											
+												<i class="fa-light fa-circle-chevron-right"></i>
+											
+											<figure>
+												<img src="/images/locacao/lista/locacao.jpg" alt="Imagem Embarcação" title="Imagem Embarcação">
+											</figure>
+										</div>
+									</a>
+								  </td>
+								  <td class="titTbMobile">Modelo</td>
+								  <td>Ferretti 75’</td>
+								  <td class="titTbMobile">Fabricante</td>
+								  <td>Ferretti</td>
+								  <td class="titTbMobile">Tamanho</td>
+								  <td>75’</td>
+								  <td class="titTbMobile">Ano</td>
+								  <td>2012</td>
+								  <td class="titTbMobile">Motor</td>
+								  <td>2xMAN1550HP</td>
+								  <td class="titTbMobile">Código</td>
+								  <td>REF 1668</td>
+								  <td class="titTbMobile">Quartos</td>
+								  <td>000</td>
+								  <td class="titTbMobile">Preço</td> 
+								  <td>A Consultar</td>
+							  </tr>
+								<tr class="tr__flex">
+								  <td>
+									<a href="locacao-detalhes.html">
+										<div class="img__embarcacao">
+											
+												<i class="fa-light fa-circle-chevron-right"></i>
+											
+											<figure>
+												<img src="/images/locacao/lista/locacao.jpg" alt="Imagem Embarcação" title="Imagem Embarcação">
+											</figure>
+										</div>
+									</a>
+								  </td>
+								  <td class="titTbMobile">Modelo</td>
+								  <td>Ferretti 75’</td>
+								  <td class="titTbMobile">Fabricante</td>
+								  <td>Ferretti</td>
+								  <td class="titTbMobile">Tamanho</td>
+								  <td>75’</td>
+								  <td class="titTbMobile">Ano</td>
+								  <td>2012</td>
+								  <td class="titTbMobile">Motor</td>
+								  <td>2xMAN1550HP</td>
+								  <td class="titTbMobile">Código</td>
+								  <td>REF 1668</td>
+								  <td class="titTbMobile">Quartos</td>
+								  <td>000</td>
+								  <td class="titTbMobile">Preço</td> 
+								  <td>A Consultar</td>
+							  </tr>
+								<tr class="tr__flex">
+								  <td>
+									<a href="locacao-detalhes.html">
+										<div class="img__embarcacao">
+											
+												<i class="fa-light fa-circle-chevron-right"></i>
+											
+											<figure>
+												<img src="/images/locacao/lista/locacao.jpg" alt="Imagem Embarcação" title="Imagem Embarcação">
+											</figure>
+										</div>
+									</a>
+								  </td>
+								  <td class="titTbMobile">Modelo</td>
+								  <td>Ferretti 75’</td>
+								  <td class="titTbMobile">Fabricante</td>
+								  <td>Ferretti</td>
+								  <td class="titTbMobile">Tamanho</td>
+								  <td>75’</td>
+								  <td class="titTbMobile">Ano</td>
+								  <td>2012</td>
+								  <td class="titTbMobile">Motor</td>
+								  <td>2xMAN1550HP</td>
+								  <td class="titTbMobile">Código</td>
+								  <td>REF 1668</td>
+								  <td class="titTbMobile">Quartos</td>
+								  <td>000</td>
+								  <td class="titTbMobile">Preço</td> 
+								  <td>A Consultar</td>
+							  </tr>
+								<tr class="tr__flex">
+								  <td>
+									<a href="locacao-detalhes.html">
+										<div class="img__embarcacao">
+											
+												<i class="fa-light fa-circle-chevron-right"></i>
+											
+											<figure>
+												<img src="/images/locacao/lista/locacao.jpg" alt="Imagem Embarcação" title="Imagem Embarcação">
+											</figure>
+										</div>
+									</a>
+								  </td>
+								  <td class="titTbMobile">Modelo</td>
+								  <td>Ferretti 75’</td>
+								  <td class="titTbMobile">Fabricante</td>
+								  <td>Ferretti</td>
+								  <td class="titTbMobile">Tamanho</td>
+								  <td>75’</td>
+								  <td class="titTbMobile">Ano</td>
+								  <td>2012</td>
+								  <td class="titTbMobile">Motor</td>
+								  <td>2xMAN1550HP</td>
+								  <td class="titTbMobile">Código</td>
+								  <td>REF 1668</td>
+								  <td class="titTbMobile">Quartos</td>
+								  <td>000</td>
+								  <td class="titTbMobile">Preço</td> 
+								  <td>A Consultar</td>
+							  </tr>
+								<tr class="tr__flex">
+								  <td>
+									<a href="locacao-detalhes.html">
+										<div class="img__embarcacao">
+											
+												<i class="fa-light fa-circle-chevron-right"></i>
+											
+											<figure>
+												<img src="/images/locacao/lista/locacao.jpg" alt="Imagem Embarcação" title="Imagem Embarcação">
+											</figure>
+										</div>
+									</a>
+								  </td>
+								  <td class="titTbMobile">Modelo</td>
+								  <td>Ferretti 75’</td>
+								  <td class="titTbMobile">Fabricante</td>
+								  <td>Ferretti</td>
+								  <td class="titTbMobile">Tamanho</td>
+								  <td>75’</td>
+								  <td class="titTbMobile">Ano</td>
+								  <td>2012</td>
+								  <td class="titTbMobile">Motor</td>
+								  <td>2xMAN1550HP</td>
+								  <td class="titTbMobile">Código</td>
+								  <td>REF 1668</td>
+								  <td class="titTbMobile">Quartos</td>
+								  <td>000</td>
+								  <td class="titTbMobile">Preço</td> 
+								  <td>A Consultar</td>
+							  </tr>
+								<tr class="tr__flex">
+								  <td>
+									<a href="locacao-detalhes.html">
+										<div class="img__embarcacao">
+											
+												<i class="fa-light fa-circle-chevron-right"></i>
+											
+											<figure>
+												<img src="/images/locacao/lista/locacao.jpg" alt="Imagem Embarcação" title="Imagem Embarcação">
+											</figure>
+										</div>
+									</a>
+								  </td>
+								  <td class="titTbMobile">Modelo</td>
+								  <td>Ferretti 75’</td>
+								  <td class="titTbMobile">Fabricante</td>
+								  <td>Ferretti</td>
+								  <td class="titTbMobile">Tamanho</td>
+								  <td>75’</td>
+								  <td class="titTbMobile">Ano</td>
+								  <td>2012</td>
+								  <td class="titTbMobile">Motor</td>
+								  <td>2xMAN1550HP</td>
+								  <td class="titTbMobile">Código</td>
+								  <td>REF 1668</td>
+								  <td class="titTbMobile">Quartos</td>
+								  <td>000</td>
+								  <td class="titTbMobile">Preço</td> 
+								  <td>A Consultar</td>
+							  </tr>
+								<tr class="tr__flex">
+								  <td>
+									<a href="locacao-detalhes.html">
+										<div class="img__embarcacao">
+											
+												<i class="fa-light fa-circle-chevron-right"></i>
+											
+											<figure>
+												<img src="/images/locacao/lista/locacao.jpg" alt="Imagem Embarcação" title="Imagem Embarcação">
+											</figure>
+										</div>
+									</a>
+								  </td>
+								  <td class="titTbMobile">Modelo</td>
+								  <td>Ferretti 75’</td>
+								  <td class="titTbMobile">Fabricante</td>
+								  <td>Ferretti</td>
+								  <td class="titTbMobile">Tamanho</td>
+								  <td>75’</td>
+								  <td class="titTbMobile">Ano</td>
+								  <td>2012</td>
+								  <td class="titTbMobile">Motor</td>
+								  <td>2xMAN1550HP</td>
+								  <td class="titTbMobile">Código</td>
+								  <td>REF 1668</td>
+								  <td class="titTbMobile">Quartos</td>
+								  <td>000</td>
+								  <td class="titTbMobile">Preço</td> 
+								  <td>A Consultar</td>
+							  </tr>
+								<tr class="tr__flex">
+								  <td>
+									<a href="locacao-detalhes.html">
+										<div class="img__embarcacao">
+											
+												<i class="fa-light fa-circle-chevron-right"></i>
+											
+											<figure>
+												<img src="/images/locacao/lista/locacao.jpg" alt="Imagem Embarcação" title="Imagem Embarcação">
+											</figure>
+										</div>
+									</a>
+								  </td>
+								  <td class="titTbMobile">Modelo</td>
+								  <td>Ferretti 75’</td>
+								  <td class="titTbMobile">Fabricante</td>
+								  <td>Ferretti</td>
+								  <td class="titTbMobile">Tamanho</td>
+								  <td>75’</td>
+								  <td class="titTbMobile">Ano</td>
+								  <td>2012</td>
+								  <td class="titTbMobile">Motor</td>
+								  <td>2xMAN1550HP</td>
+								  <td class="titTbMobile">Código</td>
+								  <td>REF 1668</td>
+								  <td class="titTbMobile">Quartos</td>
+								  <td>000</td>
+								  <td class="titTbMobile">Preço</td> 
+								  <td>A Consultar</td>
+							  </tr>
+								<tr class="tr__flex">
+								  <td>
+									<a href="locacao-detalhes.html">
+										<div class="img__embarcacao">
+											
+												<i class="fa-light fa-circle-chevron-right"></i>
+											
+											<figure>
+												<img src="/images/locacao/lista/locacao.jpg" alt="Imagem Embarcação" title="Imagem Embarcação">
+											</figure>
+										</div>
+									</a>
+								  </td>
+								  <td class="titTbMobile">Modelo</td>
+								  <td>Ferretti 75’</td>
+								  <td class="titTbMobile">Fabricante</td>
+								  <td>Ferretti</td>
+								  <td class="titTbMobile">Tamanho</td>
+								  <td>75’</td>
+								  <td class="titTbMobile">Ano</td>
+								  <td>2012</td>
+								  <td class="titTbMobile">Motor</td>
+								  <td>2xMAN1550HP</td>
+								  <td class="titTbMobile">Código</td>
+								  <td>REF 1668</td>
+								  <td class="titTbMobile">Quartos</td>
+								  <td>000</td>
+								  <td class="titTbMobile">Preço</td> 
+								  <td>A Consultar</td>
+							  </tr>
+								<tr class="tr__flex">
+								  <td>
+									<a href="locacao-detalhes.html">
+										<div class="img__embarcacao">
+											
+												<i class="fa-light fa-circle-chevron-right"></i>
+											
+											<figure>
+												<img src="/images/locacao/lista/locacao.jpg" alt="Imagem Embarcação" title="Imagem Embarcação">
+											</figure>
+										</div>
+									</a>
+								  </td>
+								  <td class="titTbMobile">Modelo</td>
+								  <td>Ferretti 75’</td>
+								  <td class="titTbMobile">Fabricante</td>
+								  <td>Ferretti</td>
+								  <td class="titTbMobile">Tamanho</td>
+								  <td>75’</td>
+								  <td class="titTbMobile">Ano</td>
+								  <td>2012</td>
+								  <td class="titTbMobile">Motor</td>
+								  <td>2xMAN1550HP</td>
+								  <td class="titTbMobile">Código</td>
+								  <td>REF 1668</td>
+								  <td class="titTbMobile">Quartos</td>
+								  <td>000</td>
+								  <td class="titTbMobile">Preço</td> 
+								  <td>A Consultar</td>
+							  </tr>
+							  
+							</tbody>
+						  </table>
+
+						<div class="paginacao">
+							<a href="#"><i class="fa-sharp fa-light fa-chevron-left"></i></a>
+							<a href="#" class="active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#"><i class="fa-sharp fa-light fa-chevron-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="duvidas__frequentes">
+			<div class="center">
+				<h2>ETAPAS DO PROCESSO DE ALUGUEL DE BARCO DO INÍCIO AO FIM</h2>
+
+				<p>Para facilitar o processo, guiaremos você pelas etapas, desde encontrar o barco certo, reservá-lo e, finalmente, embarcar.</p>
+
+				<p>1. <b>Encontre o barco certo para você no nosso site:</b> há muitos fatores a serem considerados ao escolher um barco. O tamanho do seu grupo, seu orçamento. <b>Use nosso site para encontrar barcos que atendam às suas necessidades!</b></p>
+				<p>2. <b>PRÉ Reserva:</b> Depois de encontrar o barco perfeito para você , faça sua consulta de disponibilidade online, preenchendo o formulário na página do barco escolhido, assim que recebermos sua solicitação, faremos contato com o proprietário do barco escolhido para ver disponibilidade para o período selecionado, se tiver livre, faremos então contato com você para darmos seguimento ao contrato de locação, e caso o barco não esteja disponível, iremos enviar à você outras opções disponíveis no mesmo padrão para sua escolha.</p>
+				<p>3. <b>Embarque/ desembarque:</b> Levamos o barco ao local mais próximo de você, seja em sua casa de Praia ou de Canal, píer do seu condomínio ou Marina de sua preferência, e o desembarque será sempre no mesmo local onde foi feito o embarque.</p>
+
+				
+				<div class="accordion">
+					<h2>Perguntas e respostas sobre Locação de embarcações ( Charter) pela Leo Broker</h2>
+					<div class="accordion-item">
+						<h3 class="title">
+							<span>1. Quais as Regiões a Leo Broker atende?</span>
+							<i class="fas fa-chevron-down"></i>
+						</h3>
+						<p class="paragraph">
+							<b>Rio de janeiro</b> (Embarque na Marina da Glória e Iate Clube do Rio de Janeiro)<br> <b>(Mangaratiba) RJ</b> - Condomínio Portobello Resort Toda região entre Angra dos Reis e Paraty.
+						</p>
+					</div>
+
+					<div class="accordion-item">
+						<h3 class="title">
+							<span>2. Como funciona o processo de reservas?</span>
+							<i class="fas fa-chevron-down"></i>
+						</h3>
+						<p class="paragraph">
+							Você deve escolher primeiramente região que você quer navegar. A partir daí temos diversas opções de embarcações cadastradas em nosso site, escolha a sua embarcação, depois de encontrar o barco perfeito para você , faça sua consulta de disponibilidade online, preenchendo o formulário na página do barco escolhido, <b>Você irá receber um e-mail com confirmação de sua solicitação de pré-reserva</b>, assim que recebermos sua solicitação, faremos contato com o proprietário do barco escolhido para ver disponibilidade para o período selecionado, se tiver livre, faremos então contato com você por e-mail ou WhatsApp, para darmos seguimento ao contrato de locação e pagamento da reserva em até 24 horas, e caso o barco não esteja disponível, iremos enviar à você outras opções disponíveis no mesmo padrão para sua escolha.
+						</p>
+					</div>
+
+					<div class="accordion-item">
+						<h3 class="title">
+							<span>3. Quais as formas de pagamento?</span>
+							<i class="fas fa-chevron-down"></i>
+						</h3>
+						<p class="paragraph">
+							Trabalhamos com transferência bancária TED e PIX, Sinal de 50% para a confirmação da reserva e os outros 50% até 3 dias antes do embarque.
+						</p>
+						<p class="paragraph">
+							Em todas as locações é cobrado um valor de CAUÇÃO no valor de 40% do valor total da locação, esse valor fica em garantia para cobrir quaisquer danos causados por mau uso da embarcação durante o período locado, e pode ser usado também para cobrir o reabastecimento da embarcação após o termino da locação, caso não haja mais postos de combustíveis abertos será feito o reabastecimento no dia seguinte e enviado a nota fiscal junto ao saldo restante do valor do CAUÇÃO.
+						</p>
+						<p class="paragraph">
+							<b>Caso não seja usado o CAUÇÃO, será devolvido integral ao locador em até 3 dias úteis</b>
+						</p>
+						<p class="paragraph">
+							NÃO TRABALHAMOS COM CHEQUES E CARTÕES DE CRÉDITO.
+						</p>
+					</div>
+
+					<div class="accordion-item">
+						<h3 class="title">
+							<span>4. A reserva tem que ser feita com quantos dias de antecedência?</span>
+							<i class="fas fa-chevron-down"></i>
+						</h3>
+						<p class="paragraph">
+							O ideal é que a reserva seja feita com pelo menos 48 horas antes da locação, quando o passeio acontece aos finais de semana e feriados sugerimos um prazo de 72 horas para podermos enviar todas as informações e organizar a locação com tranquilidade.
+						</p>
+						<p class="paragraph">
+							No caso de feriados concorridos como semana do Réveillon e Carnaval, como a demanda é muito alta, recomendamos fazer a reserva com semanas de antecedência, assim dessa maneira, você garante os melhores barcos com o melhor preço.
+						</p>
+					</div>
+
+					<div class="accordion-item">
+						<h3 class="title">
+							<span>5. No caso de chuvas e mau tempo?</span>
+							<i class="fas fa-chevron-down"></i>
+						</h3>
+						<p class="paragraph">
+							As embarcações saem com sol ou chuva, o único fator que impossibilita a saída são condições meteorológicas que possam apresentar riscos à segurança dos passageiros durante a navegação (informação provida pela marinha do Brasil).
+						</p>
+						<p class="paragraph">
+							Nessas situações a locação será transferida para uma nova data mediante a disponibilidade da embarcação, isso pode ser combinado direto com nossos consultores.
+						</p>
+					</div>
+
+					<div class="accordion-item">
+						<h3 class="title">
+							<span>6. Nas locações estão incluídos os marinheiros?</span>
+							<i class="fas fa-chevron-down"></i>
+						</h3>
+						<p class="paragraph">
+							Sim. Todas as embarcações possuem tripulação (marinheiros) que conhecem bem a região a ser navegada e o barco, e a maioria deles fazem um bom churrasco e deliciosas caipirinhas quando o barco está ancorado.
+						</p>
+					</div>
+
+					<div class="accordion-item">
+						<h3 class="title">
+							<span>7. Qual a duração do dayuse e como funciona se eu quiser pernoitar?</span>
+							<i class="fas fa-chevron-down"></i>
+						</h3>
+						<p class="paragraph">
+							As diárias (dayuse) são de 8 horas, geralmente se inicia as 10:00hs e encerra as 18:00hs, + o gasto de combustível durante a locação, se o cliente quiser pernoitar é acrescido 50% no valor da locação. ( nem todas embarcações são autorizadas para pernoites).
+						</p>
+					</div>
+
+					<div class="accordion-item">
+						<h3 class="title">
+							<span>8. O combustível é incluído no valor da locação?</span>
+							<i class="fas fa-chevron-down"></i>
+						</h3>
+						<p class="paragraph">
+							Não, as embarcações saem abastecidas do seu porto de guarda (marinas) e no final do passeio você para em um posto de combustível e completa o tanque, pagando apenas pelo combustível usado.
+						</p>
+						<p class="paragraph">Caso você queira fazer um passeio já com roteiro programado, podemos fazer um cálculo desse combustível e já acrescentar no valor fechado da locação, porém não haverá possibilidade de mudança de rota programada.</p>
+					</div>
+
+					<div class="accordion-item">
+						<h3 class="title">
+							<span>9. Pode navegar a noite?</span>
+							<i class="fas fa-chevron-down"></i>
+						</h3>
+						<p class="paragraph">
+							Não, as nossas embarcações não estão autorizadas a navegar a noite, salvo exceção no caso de locações com pernoites acordadas em contrato onde o capitão da embarcação tenha total conhecimento da região e o proprietário autorize, em nenhuma situação ele será obrigado a navegar a noite se isso não estiver previamente autorizado pelo proprietário em contrato.
+						</p>
+					</div>
+
+					<div class="accordion-item">
+						<h3 class="title">
+							<span>10. No caso de pernoites, onde dormem os marinheiros?</span>
+							<i class="fas fa-chevron-down"></i>
+						</h3>
+						<p class="paragraph">
+							Os marinheiros dormem no quarto ou cabine para a tripulação, as embarcações que autorizam pernoite sempre tem cabine de tripulantes, onde não tira a privacidade dos passageiros durante as pernoites.
+						</p>
+					</div>
+
+					<div class="accordion-item">
+						<h3 class="title">
+							<span>11. O que tenho direito a fazer durante a locação?</span>
+							<i class="fas fa-chevron-down"></i>
+						</h3>
+						<p class="paragraph">
+							Curtir e aproveitar o máximo possível, faça bastante fotos para suas redes sociais, ou até mesmo para guardar de lembrança, aprecie o mar e a vista das ilhas paradisíacas, mergulhe sempre que possível, ouça suas músicas preferidas e aproveite momentos únicos com sua família e amigos.
+						</p>
+					</div>
+
+					<div class="accordion-item">
+						<h3 class="title">
+							<span>12. Como faço para abastecer o barco com alimentos e bebidas antes do embarque?</span>
+							<i class="fas fa-chevron-down"></i>
+						</h3>
+						<p class="paragraph">
+							<b>Alimentos e bebidas não estão inclusos no valor da locação, entretanto você pode contratar nossos serviços de concierge a bordo,</b> você nos passa uma lista de compras de alimentos e bebidas de sua preferência, já com a quantidade necessária para o número de passageiros que irão com você a bordo, você faz um depósito antecipado de um valor aproximado para essas compras, e nós fazemos as compras com antecedência e entregamos no barco antes do seu embarque.
+						</p>
+						<p class="paragraph">ESSE SERVIÇO DEVE SER CONTRATADO COM ANTECEDÊNCIA MÍNIMA DE 48 HORAS E É COBRADO UMA TAXA DE 15% DO VALOR TOTAL DA NOTA FISCAL DAS COMPRAS.</p>
+						<p class="paragraph">Surpreenda-se ao embarcar em sua lancha, a sua bebida preferida já vai estar gelada e pronta para o consumo, dessa maneira você não tem a preocupação de fazer as compras e a logística de levar tudo a bordo, lembre-se que muitas vezes os supermercados estão lotados no verão e nos feriados nacionais.</p>
+						<p class="paragraph">Você pode levar seus próprios alimentos e bebidas, mas não se esqueça do carvão e acendedor se for fazer um churrasco, o marinheiro será responsável por preparar e servir você e seus convidados, caso o grupo seja grande é interessante solicitar um ajudante extra para que o atendimento seja o melhor possível. Todos nossos barcos contam com geladeira ou cooler para as bebidas, e churrasqueira para seu churrasco.</p>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="sitemap">
+			<div class="center">
+				<div class="container__flex">
+					<div class="footer__col">
+						<h5>Menu</h5>
+						<nav class="site__menu__footer">
+							<ul>
+								<li><a href="quem-somos.html" class="nav__link">Quem Somos</a></li>
+								<li><a href="embarcacoes-novas.html" class="nav__link">Embarcações Novas</a></li>
+								<li><a href="seminovos.html" class="nav__link">Seminovos</a></li>	
+								<li><a href="locacao.html" class="nav__link">Locação</a></li>
+								<li><a href="turismo.html" class="nav__link">Turismo</a></li>
+								<li><a href="anuncie.html" class="nav__link">Anuncie Aqui</a></li> 
+								<li><a href="contato.html" class="nav__link">Contato</a></li>								
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__col">
+						<div class="footer__contato">
+							<h5>Contato</h5>
+							<ul>
+								<li><i class="fas fa-map-marker-alt"></i>
+									<p>Rodovia Mário Covas (BR 101), Km 469,5 - Jacuecanga - CEP: 23914-345</p>
+								</li>
+								<li><i class="fas fa-envelope"></i>
+									<p>contato@leobroker.com.br</p>
+								</li>
+								<li><i class="fas fa-phone"></i>
+									<p>(24) 99866-3001</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__social">
+							<h6>Acompanhe em nossas redes</h6>
+							<nav class="social__links">
+								<ul>
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__partner">                                
+							<figure><img src="../images/logoLeoFooter.png" alt="Logo LeoBroker" title="Logo LeoBroker" class="logoFooter"></figure>
+							<br>
+							<p>Our huge list of partner market is lorem ipsum dolor sit consectetur amet, adipisicing elit. Suscipit, incidunt vero quod numquam tempore quia ipsa.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<div class="center">
+				<p>Copyright © 2023. Todos direitos reservados.</p>
+			</div>
+		</div>
+	</footer>
+
+	<a href="https://api.whatsapp.com/send?phone=5524998663001" class="link__whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+	
+	<a href="../" class="link__modal__visualizacao" data-fancybox data-src="#sucesso">Modal Sucesso</a><br>
+	<a href="../" class="link__modal__visualizacao" data-fancybox data-src="#erro">Modal Erro</a><br>
+
+	<!--Modal Sucesso-->
+	<div class="modal" id="sucesso">
+		<div class="content">			
+			<div class="header__modal">		
+				<div class="icon__modal">
+					<i class="fas fa-check"></i>
+				</div>					
+			</div>
+
+			<h2 class="txt__titulo__modal">Mensagem enviada com sucesso!</h2>
+
+			<a href="#" data-fancybox-close class="btn__modal__voltar">Voltar</a>
+		</div>
+	</div>
+	<!--Fim Modal Sucesso-->
+
+	<!--Modal Erro-->
+	<div class="modal" id="erro">
+		<div class="content">			
+			<div class="header__modal">		
+				<div class="icon__modal">
+					<i class="fa-light fa-circle-exclamation"></i>
+				</div>					
+			</div>
+
+			<h2 class="txt__titulo__modal">Um Erro foi Encontrado!</h2>
+		</div>
+	</div>
+	<!--Fim Modal Erro-->
+</body>
+</html>
+<script type="text/javascript" src="../scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.min.js"></script>
+<script type="text/javascript" src="../scripts/main.js"></script>
+<script type="text/javascript" src="../scripts/jquery.mask.min.js"></script>
+<script src="../scripts/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js" integrity="sha512-fDGBclS3HUysEBIKooKWFDEWWORoA20n60OwY7OSYgxGEew9s7NgDaPkj7gqQcVXnASPvZAiFW8DiytstdlGtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.site__menu li:nth-child(4) .nav__link').addClass('active');
+	});
+</script>

@@ -1,0 +1,698 @@
+section.breadcumb
+    padding: 25rem 0 30rem
+    position: relative
+    .center
+        position: relative
+        top: 35%
+        z-index: 1
+    h1
+        font-size: 2.8rem
+        line-height: 3.2rem
+        font-weight: $bold
+        color: $white
+        margin-bottom: 2rem
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.6)
+    p
+        font-size: 1.6rem
+        line-height: 2.4rem
+        color: $white
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.6)
+    .video__anuncio
+        display: block
+        top: 0
+        left: 0
+        width: 100%
+        height: 572px
+        -webkit-mask: url(/images/mascara-vertical.svg) repeat-x 0 0/cover
+        mask: url(/images/mascara-vertical.svg) repeat-x 0 0/cover
+        min-height: 60vh
+        position: fixed
+        overflow: hidden
+    .video__player
+        width: 100%
+        height: 100%
+        @include flexbox
+        @include center
+        align-items: center
+        position: relative
+        min-height: 60vh
+        overflow: hidden
+        .video__player__video
+            position: absolute
+            top: 50%
+            left: 50%
+            min-width: 100%
+            min-height: 100%
+            transform: translateX(-50%) translateY(-50%)
+            box-sizing: border-box
+
+section.fale__conosco
+    position: relative
+    z-index: 1
+    padding-bottom: 6rem
+    .subHeader
+        h2
+            font-weight: $black
+    h3
+        font-size: 1.6rem
+        line-height: 3rem
+        color: $white
+        margin-bottom: 3rem
+
+section.quem__somos
+    padding-bottom: 13rem
+    .introducao__quem__somos
+        @include flexbox
+        gap: 7rem
+        margin-bottom: 6rem
+        @include breakpoint(mobile)
+            @include flexwrap
+        .texto__quem__somos
+            width: 50%
+            h2
+                font-size: 4rem
+                line-height: 4.8rem
+                color: $white
+                padding-bottom: 2rem
+            p
+                font-size: 1.6rem
+                line-height: 3rem
+                color: $white
+                &:not(:last-child)
+                    margin-bottom: 3.2rem
+        .img__quem__somos
+            width: 50%
+            img
+                max-width: 100%
+        @include breakpoint(mobile)
+            .texto__quem__somos, .img__quem__somos
+                width: 100%
+    .descricao__sobre__nos
+        @include flexbox
+        gap: 7rem
+        @include flexwrap
+    .item__sobre__nos
+        width: calc(50% - 35px)
+        @include breakpoint(mobile)
+            width: 100%
+        .img__sobre
+            margin-bottom: 20px
+            img
+                transition: all 250ms ease
+                &:hover
+                    transform: scale(1.2)
+        .descricao__sobre
+            h3
+                font-size: 2rem
+                line-height: 2.4rem
+                color: $white
+                padding-bottom: 1rem
+            p
+                font-size: 1.6rem
+                line-height: 3rem
+                color: $white
+
+section.passeio
+    padding-bottom: 4rem
+    .container__passeio 
+        padding-top: 11.2rem
+        @include flexbox
+        gap: 16rem 4rem
+        flex-direction: column       
+        .item__passeio
+            @include flexbox
+            gap: 4rem
+            align-items: center
+            @include flexwrap
+            &:nth-child(even)
+                .descricao__passeio    
+                    order: 2
+                    @include breakpoint(mobile)
+                        order: 1
+                .localizacao__passeio
+                    order: 1
+                    @include breakpoint(mobile)
+                        order: 2
+            .descricao__passeio    
+                width: calc(50% - 20px)   
+                @include breakpoint(mobile)         
+                    width: 100%
+                span
+                    font-size: 1.4rem
+                    line-height: 1.6rem
+                    padding-bottom: 1.6rem
+                    color: $white
+                    display: block
+                h2
+                    font-size: 3.2rem
+                    line-height: 3.8rem
+                    padding-bottom: 1.5rem
+                    color: $white
+                p
+                    font-size: 1.6rem
+                    line-height: 3rem
+                    color: $white
+            .localizacao__passeio
+                width: calc(50% - 20px)
+                @include breakpoint(mobile)         
+                    width: 100%
+                img
+                    max-width: 100%
+                iframe
+                    max-width: 100%
+
+section.detalhes
+    position: relative
+    z-index: 1
+    padding-bottom: 12rem
+    .container__galeria__de__fotos
+        @include flexbox
+        @include flexwrap
+        gap: 24px
+        .item__foto__galeria
+            width: calc(50% - 18px)
+            transition: .2s
+            @include breakpoint(mobile)
+                width: 100%
+            img
+                max-width: 100% 
+                @include breakpoint(desktop)
+                    width: 100%
+        .slick-slide
+            margin: 0 12px         
+        .slick-prev, .slick-next
+            width: 45px
+            height: 45px
+        .slick-prev
+            left: -80px
+            @include breakpoint(desktop)
+                left: -45px
+        .slick-next
+            right: -80px
+            @include breakpoint(desktop)
+                right: -45px
+    #fale__conosco
+        width: 80%
+        margin: 0 auto
+        @include breakpoint(mobile)
+            width: 100%
+        .valor__titulo
+            color: $white
+            font-size: 2rem
+            text-align: center
+            line-height: 3rem
+        .valor__estimado
+            color: $white
+            font-size: 4rem
+            text-align: center
+            line-height: 5rem
+    .nome__modelo
+        margin: 11.5rem 0 8rem
+        @include breakpoint(mobile)
+            margin: 6rem 0 4rem
+        p
+            color: $white
+        h3
+            font-size: 3.2rem
+            line-height: 3.8rem
+            padding-bottom: 1.5rem
+            color: $white
+            font-weight: $bold
+            @include breakpoint(mobile)
+                text-align: center
+    .container__detalhes__modelo
+        margin: 4rem 0 9rem
+        &.embarcacoes__novas
+            .item__detalhe__modelo
+                .item
+                    @include breakpoint(mobile)
+                        flex-direction: column
+                    h4
+                        margin-bottom: 0
+        &.locacao
+            @include flexbox
+            gap: 4rem
+            flex-direction: column
+            margin-bottom: 8rem
+            @include breakpoint(tablet)
+                @include flexwrap
+            .item__detalhe__modelo
+                @include grid
+                grid-template-columns: repeat(3,1fr)
+                gap: 12rem
+                @include breakpoint(tablet)
+                    grid-template-columns: 1fr
+                    gap: 4rem
+                .item
+                    display: block
+                    border: none
+                    padding: 0
+                    &:hover
+                        background: none
+                    h4
+                        font-size: 1.6rem
+                        font-weight: 700
+                        color: $white
+                        line-height: 30px
+                        margin-bottom: 0.8rem
+                    p
+                        line-height: 30px
+    .item__detalhe__modelo
+        @include grid
+        grid-template-columns: repeat(3,1fr)
+        gap: 6px
+        @include breakpoint(tablet)
+            grid-template-columns: repeat(2,1fr)
+        @include breakpoint(mobile)
+            grid-template-columns: 1fr
+        .item
+            border-radius: 8px
+            border: solid 1px $cor10
+            padding: .8rem 2.2rem
+            transition: all .1s ease-in
+            min-height: 80px
+            @include flexbox
+            align-items: center
+            gap: 2.4rem
+            @include breakpoint(mobile)
+                @include flexwrap
+                text-align: center
+                @include center
+                gap: 1.2rem
+            &:hover
+                background: $cor11
+            h4
+                font-family: $RobotoSlab
+                font-weight: $bold
+                margin-bottom: .8rem
+                color: $white
+                font-size: 1.6rem
+                line-height: 2rem
+            p
+                font-family: $Roboto
+                color: $white                
+                font-size: 1.6rem
+                line-height: 2rem
+                &.price
+                    font-family: $RobotoSlab
+                    font-weight: $bold
+                    font-size: 3rem
+                    line-height: 3.6rem
+            .icon
+                @include breakpoint(mobile)
+                    width: 100%
+                    img
+                        margin: 0 auto
+    .item__detalhe__observacao
+        border-radius: 8px
+        border: solid 1px $cor10
+        padding: 1.4rem 2.2rem
+        margin: .8rem 0 0
+        @include flexbox
+        align-items: center
+        gap: 2.4rem
+        @include breakpoint(mobile)
+            @include flexwrap
+            @include center
+        .icon
+            @include breakpoint(mobile)
+                width: 100%
+                img
+                    margin: 0 auto
+        
+        h4
+            font-family: $RobotoSlab
+            font-weight: $bold
+            margin-bottom: .8rem
+            color: $white
+            font-size: 1.6rem
+            line-height: 2rem
+        p
+            font-family: $Roboto
+            color: $white                
+            font-size: 1.6rem
+            line-height: 2rem
+    .item__detalhe__acessorios
+        border-radius: 8px
+        border: solid 1px $cor10
+        padding: 1.4rem 2.2rem
+        margin: .8rem 0 0
+        h4
+            font-family: $Roboto
+            color: $white                
+            font-size: 1.6rem
+            line-height: 2rem
+            margin-bottom: 1.8rem
+        p
+            font-family: $Roboto
+            color: $white                
+            font-size: 1.6rem
+            line-height: 2rem
+    .container__lista__acessorios
+        @include grid
+        grid-template-columns: repeat(3,1fr)
+        gap: 18px 16px
+        @include breakpoint(mobile)
+            grid-template-columns: 1fr
+    .container__galeria__de__fotos_formulario
+        @include grid
+        grid-template-columns: repeat(2,1fr)
+        gap: 2rem
+        &.locacao
+            grid-template-columns: 1fr
+            width: 50%
+            margin: 0 auto
+        @include breakpoint(desktop)
+            grid-template-columns: 1fr
+            gap: 8rem
+        .container__formulario
+            @include flexbox
+            @include flexwrap
+            gap: 24px
+            .subHeaderIntern
+                margin: 0 auto
+                @include breakpoint(desktop)
+                    width: 100%
+            .valor__titulo
+                color: #FFF
+                font-size: 2rem
+                text-align: center
+                line-height: 3rem
+            .valor__estimado
+                color: #FFF
+                font-size: 4rem
+                text-align: center
+                line-height: 5rem
+
+section.lista__embarcacoes
+    position: relative
+    z-index: 1
+    padding-bottom: 16rem
+    &.locacao
+        .center
+            max-width: 90%
+            .filtrar
+                width: 15%
+                @include breakpoint(fullhd)
+                    width: 20%
+                @include breakpoint(tablet)
+                    width: 100%
+        .container__flex
+            gap: 2.4rem
+    .container__flex
+        @include justify
+        @include breakpoint(tablet)
+            @include flexwrap
+    .filtrar
+        width: 25%
+        @include breakpoint(tablet)
+            width: 100%
+        h2
+            font-size: 3rem
+            font-weight: $black
+            color: $white
+            line-height: 4rem
+            margin-bottom: 3.8rem
+        @include breakpoint(tablet)
+            .group__field
+                margin-top: 2.4rem
+                @include flexwrap                
+        .field:not(:last-child), field:not(:last-child) 
+            margin-bottom: 1.2rem
+    .lista__embarcacoes
+        width: calc(75% - 65px)
+        @include breakpoint(tablet)
+            width: 100%
+        @include breakpoint(mobile)
+            margin-top: 4rem
+        @include flexbox
+        @include flexwrap
+        gap: 3.5rem 3.2rem
+        .item__embarcacao
+            width: calc(50% - 16px)
+            border: solid 1px $cor7
+            background: $cor6
+            @include breakpoint(tablet)
+                @include flexwrap
+            .img__embarcacao
+                position: relative
+                &:before
+                    position: absolute
+                    content: ""
+                    top: 0
+                    left: 0
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 30%, #000 140%)
+                    width: 100%
+                    height: 100%
+                img
+                    max-width: 100%
+                i
+                    position: absolute
+                    bottom: 1.2rem
+                    right: 2.4rem
+                    font-size: 2.8rem
+                    color: $white
+              
+            .nome__embarcacao
+                background: $cor6
+                padding: 2rem 3rem
+                @include flexbox
+                @include justify
+                align-items: end
+                h3
+                    font-size: 3rem
+                    line-height: 4rem
+                    font-weight: $bold
+                    color: $white
+                    &.nova
+                        font-family: $OpenSans
+                        text-transform: uppercase
+                        font-style: italic
+                        font-weight: 400
+                h4
+                    font-size: 4.4rem
+                    line-height: 5rem
+                    font-weight: $bold
+                    color: $white
+    .lista__tabela__embarcacoes
+        width: calc(85% - 65px)
+        @include breakpoint(tablet)
+            width: 100%
+            margin: 4rem 0
+        .img__embarcacao
+            width: 90%
+            position: relative
+            margin: 1.2rem 0
+            max-width: 150px
+            @include breakpoint(fullhd)
+                width: 100%
+                max-width: initial
+            &:before
+                position: absolute
+                content: ""
+                top: 0
+                left: 0
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 30%, #000 140%)
+                width: 100%
+                height: 100%
+            img
+                width: 100%
+                max-width: 100%
+            a
+                position: absolute
+                bottom: 1.2rem
+                right: 1rem
+                font-size: 1.6rem
+                color: $white
+            i
+                position: absolute
+                bottom: 1.2rem
+                right: 1rem
+                font-size: 1.6rem
+                color: $white
+    .container__lista__embarcacoes
+        @include grid
+        grid-template-columns: repeat(2,1fr)
+        gap: 24px 40px
+        @include breakpoint(fullhd)
+            gap: 20px 20px
+        @include breakpoint(mobile)
+            grid-template-columns: 1fr
+        a
+            width: 100%
+        .item__embarcacao
+            width: 100%
+            background: $white
+            border-radius: 8px
+            @include flexbox
+            align-items: center
+            gap: 2.2rem
+            transition: .2s ease all
+            @include breakpoint(tablet)
+                @include flexwrap
+            .img__embarcacao__seminonvo
+                width: 100%
+                max-width: 283px
+                border-top-left-radius: 8px
+                border-bottom-left-radius: 8px
+                @include breakpoint(fullhd)
+                    border-radius: 8px
+                    max-width: initial
+                img
+                    max-width: 100%
+                    border-top-left-radius: 8px
+                    border-bottom-left-radius: 8px
+                    @include breakpoint(fullhd)
+                        border-radius: 8px
+                        width: 100%
+            .dados__embarcacao
+                width: 100%
+                @include breakpoint(fullhd)
+                    padding: 0 5px
+                h2
+                    font-family: $RobotoSlab
+                    text-transform: uppercase
+                    color: $cor12
+                    font-size: 2rem
+                    line-height: 2.6rem
+                    margin-bottom: 1.6rem
+                    @include breakpoint(fullhd)
+                        font-size: 1.8rem
+                        line-height: 2rem
+                        margin-bottom: 1rem
+                .dados__modelo__embarcacao
+                    position: relative
+                    padding-left: 2rem
+                    @include breakpoint(fullhd)
+                        padding: 1rem
+                    &:before
+                        content: ''
+                        position: absolute
+                        background: $cor1
+                        border-radius: 2px
+                        width: 6px
+                        height: 100%
+                        top: 0
+                        left: 0
+                        @include breakpoint(fullhd)
+                            width: 100%
+                            height: 6px
+                    p
+                        font-family: $Roboto
+                        font-size: 1.6rem
+                        line-height: 2.4rem
+                        color: $cor13
+                        @include breakpoint(fullhd)
+                            font-size: 1.5rem
+                            line-height: 2rem
+                        &:not(:last-child)
+                            margin-bottom: .2rem
+                        b
+                            font-family: $RobotoSlab
+                            font-size: 1.4rem
+                            line-height: 2rem
+                            font-weight: $bold
+    .paginacao, .pagination-container
+        width: 100%
+        text-align: center
+        font-size: 2rem
+        color: $white
+        @include flexbox
+        align-items: center
+        gap: 2.2rem
+        @include center
+        margin-top: 3rem
+        i
+            font-size: 1.6rem
+            color: $cor1
+        a, .page-link
+            color: $white
+            transition: .2s
+            &:hover
+                color: $cor1
+            &.active
+                font-weight: $bold
+    ul.pagination
+        @include flexbox
+        list-style: none
+        gap: 2.2rem
+        li.active
+            font-weight: $bold
+
+section.duvidas__frequentes
+    padding-bottom: 6rem
+    h2
+        font-size: 3rem
+        font-weight: $bold
+        color: $white
+        margin-bottom: 3rem
+    p
+        font-size: 1.6rem
+        line-height: 2.4rem
+        color: $white
+        &:not(:last-child)
+            margin-bottom: 3rem
+
+/*Accordion*/
+.accordion
+    height: auto
+    margin: 0 auto
+    padding: 4rem 0 2rem 0
+    @include breakpoint(tablet)
+        max-width: 100%
+        height: auto
+        margin: 0 auto
+    h2
+        font-size: 2.4rem!important
+        line-height: 3.2rem!important
+        font-weight: $bold
+
+.accordion-item
+    padding: 0.8rem 0
+    margin: 0
+    overflow: hidden
+    border: none
+    outline: none
+    border-bottom: 1.3px solid darken(#ededed, 10)
+    &.active
+        .title
+            padding: 0.8rem 0
+            border-bottom: 1.3px solid darken(#ededed, 10)
+            i.fas
+                color: $cor1
+                transform: translateX(-50%) rotate(180deg)
+        .paragraph
+            display: block
+    &:not(:last-child)
+        margin-bottom: 3rem
+
+.title
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-family: inherit
+    font-size: 2rem
+    font-weight: 600
+    line-height: inherit
+    cursor: pointer
+    color: $white    
+    i.fas
+        font-size: 0.9rem
+        color: $white
+        transform: translateX(-50%) rotate(0)
+        transition: transform 0.15s ease
+
+.paragraph
+    font-family: inherit
+    font-size: 1.6rem
+    line-height: 2.4rem
+    font-weight: normal
+    color: $white
+    display: none
+    padding: 1rem 0
+    margin: 0!important
+
+.logoReal
+    max-width: 80%
+    @include breakpoint(mobile)        
+        margin: 0 2rem

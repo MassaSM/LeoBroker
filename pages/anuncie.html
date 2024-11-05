@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="author" content="Agência Color" />
+	<meta name="description" content="#" />
+	<link rel="canonical" href="#" />
+	<meta name="resource-type" content="document" />
+	<meta name="content-language" content="pt-br" />
+	<meta name="revisit" content="1 day" />
+	<meta name="ICBM" content="latlong" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="DC.title" content="LeoBroker" />
+	<meta property="og:title" content="LeoBroker" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="#" />
+	<meta property="og:image" content="../images/ico-facebook.jpg" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="400" />
+	<meta property="og:url" content="" />
+	<link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.pnBOg">
+	<link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!--Open Graph data-->
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Descrição Aqui">
+	<meta property="og:title" content="LeoBroker">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:site_name" content="LeoBroker">
+	<meta property="og:image" content="../images/share-image.jpg">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="1024">
+	<meta property="og:image:height" content="1024">
+	<meta property="og:url" content="https://www.enderecoaqui.com.br/">
+	<!--Facebook-->
+	<meta property="fb:pages" content="">
+	<meta property="fb:app_id" content="">
+	<!--Twitter-->
+	<meta property="twitter:description" content="Descrição Aqui">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="LeoBroker">
+	<meta property="twitter:image" content="../images/share-image.jpg">
+	<link href="../styles/all.css" rel="stylesheet" />
+	<link href="../styles/minify/main.min.css" rel="stylesheet" />
+	<link href="../styles/jquery.fancybox.min.css" rel="stylesheet">
+	<link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"></noscript>
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"></noscript>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<title>LeoBroker</title>
+</head>	
+<body>
+	<header>
+		<div class="bgHeader">
+			<div class="center">
+				<div class="container__flex">
+					<a href="index.html" class="header__logo"><figure><img src="../images/logoLeo.png" alt="Logo LeoBroker" title="Logo LeoBroker"></figure></a>
+
+					<nav class="site__menu">
+						<ul>
+							<li><a href="quem-somos.html" class="nav__link">Quem Somos</a></li>
+							<li><a href="embarcacoes-novas.html" class="nav__link">Embarcações Novas</a></li>
+							<li><a href="seminovos.html" class="nav__link">Seminovos</a></li>	
+							<li><a href="locacao.html" class="nav__link">Locação</a></li>
+							<li><a href="turismo.html" class="nav__link">Turismo</a></li>
+							<li><a href="anuncie.html" class="nav__link">Anuncie Aqui</a></li> 
+							<li><a href="contato.html" class="nav__link">Contato</a></li>
+						</ul>
+					</nav>
+
+					<figure>
+						<img src="../images/Real-Powerboats.png" class="logoReal" alt="Logo Real Powerboats" title="Logo Real Powerboats">
+					</figure>
+
+					<button class="menu__mobile">
+						<i class="fa-regular fa-bars"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="breadcumb">
+			<div class="center">
+				<h1>Anuncie</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>
+
+			<div class="video__anuncio">
+				<div class="video__player">
+					<video autoplay="" muted="muted" loop="" class="video__player__video" src="/video/3364999618.mp4"></video>
+				</div>
+			</div>			
+		</section>
+
+		<section class="fale__conosco">
+			<div class="center">
+				<div class="subHeaderIntern">
+					<span>Lorem Ipsum</span>
+					<h2>Anuncie Aqui</h2>
+				</div>
+
+				<h3>Anuncie seu barco preenchendo todas as informações abaixo e anexe até 12 fotos de sua embarcação. Suas informações serão enviadas para a nossa análise comercial e após aprovação será inserida no site. 
+					Informações pessoais serão tratadas em caráter confidencial, conforme a lei geral de proteção de dados (LGPD) LEI Nº 13.709, DE 14 DE AGOSTO DE 2018,  demais informações e fotos do produto serão de uso exclusivo da LEO YACHT BROKER.</h3>
+
+				<form id="anuncie">
+					<div class="field">
+						<div class="field">
+							<label>Nome completo do proprietário:</label>
+							<input type="text" class="input required" placeholder="Nome completo do proprietário">
+							<div class="formulario_error_mensagem">
+								Este campo deve ser preenchido
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="group__field">
+							<div class="field">
+								<div class="field">
+									<label>Telefone:</label>
+									<input type="text" class="input telefone required" placeholder="Telefone">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>E-mail:</label>
+									<input type="text" class="input required" placeholder="E-mail">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="field">
+							<label>Nome da embarcação:</label>
+							<input type="text" class="input required" placeholder="Digite aqui">
+							<div class="formulario_error_mensagem">
+								Este campo deve ser preenchido
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="group__field">
+							<div class="field">
+								<div class="field">
+									<label>Finalidade:</label>
+									<div class="select">
+										<select class="required">
+											<option value="1">Selecione</option>
+											<option value="2">Opção 1</option>
+											<option value="3">Opção 2</option>
+										</select>
+									</div>
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Fabricante:</label>
+									<div class="select">
+										<select class="required">
+											<option value="1">Selecione</option>
+											<option value="2">Opção 1</option>
+											<option value="3">Opção 2</option>
+										</select>
+									</div>
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Modelo:</label>
+									<div class="select">
+										<select class="required">
+											<option value="1">Selecione</option>
+											<option value="2">Opção 1</option>
+											<option value="3">Opção 2</option>
+										</select>
+									</div>
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Tamanho em Pés:</label>
+									<div class="select">
+										<select class="required">
+											<option value="1">Selecione</option>
+											<option value="2">Opção 1</option>
+											<option value="3">Opção 2</option>
+										</select>
+									</div>
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="group__field">
+							<div class="field">
+								<div class="field">
+									<label>Ano do casco:</label>
+									<input type="text" class="input required" placeholder="Digite aqui">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Motores:</label>
+									<div class="select">
+										<select class="required">
+											<option value="1">Selecione</option>
+											<option value="2">Opção 1</option>
+											<option value="3">Opção 2</option>
+										</select>
+									</div>
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Ano do motor:</label>
+									<input type="text" class="input required" placeholder="Digite aqui">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="group__field">
+							<div class="field">
+								<div class="field">
+									<label>Potência em HP:</label>
+									<input type="text" class="input required" placeholder="Digite aqui">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Propulsão:</label>
+									<div class="select">
+										<select class="required">
+											<option value="1">Selecione</option>
+											<option value="2">Opção 1</option>
+											<option value="3">Opção 2</option>
+										</select>
+									</div>
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Qts Motores:</label>
+									<input type="text" class="input required" placeholder="Digite aqui">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="group__field">
+							<div class="field">
+								<div class="field">
+									<label>Horas de motor:</label>
+									<input type="text" class="input required" placeholder="Digite aqui">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Combustível:</label>
+									<div class="select">
+										<select class="required">
+											<option value="1">Selecione</option>
+											<option value="2">Opção 1</option>
+											<option value="3">Opção 2</option>
+										</select>
+									</div>
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Quantos Quartos:</label>
+									<input type="text" class="input required" placeholder="Digite aqui">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="group__field">
+							<div class="field">
+								<div class="field">
+									<label>Vaga:</label>
+									<div class="select">
+										<select class="required">
+											<option value="1">Selecione</option>
+											<option value="2">Opção 1</option>
+											<option value="3">Opção 2</option>
+										</select>
+									</div>
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Máx de Passageiros:</label>
+									<div class="select">
+										<select class="required">
+											<option value="1">Selecione</option>
+											<option value="2">Opção 1</option>
+											<option value="3">Opção 2</option>
+										</select>
+									</div>
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Aceita troca:</label>
+									<div class="select">
+										<select class="required">
+											<option value="1">Selecione</option>
+											<option value="2">Opção 1</option>
+											<option value="3">Opção 2</option>
+										</select>
+									</div>
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="group__field">
+							<div class="field">
+								<div class="field">
+									<label>Preço Venda:</label>
+									<input type="text" class="input required" placeholder="Digite aqui">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Preço Locação s/ pernoite:</label>
+									<input type="text" class="input required" placeholder="Digite aqui">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Preço Locação c/ pernoite:</label>
+									<input type="text" class="input required" placeholder="Digite aqui">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="field">
+							<label>Marina onde guarda:</label>
+							<input type="text" class="input required" placeholder="Digite aqui">
+							<div class="formulario_error_mensagem">
+								Este campo deve ser preenchido
+							</div>
+						</div>
+					</div>
+
+					<div class="opcoes__embarcacoes">
+						<div class="field">
+							<div class="group__field">
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="ar__condicionado" name="ar__condicionado">
+										<label for="ar__condicionado">
+											<p>Ar condicionado</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="direcao__hidraulica" name="direcao__hidraulica">
+										<label for="direcao__hidraulica">
+											<p>Direção Hidráulica</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="sistema__anti__incendio" name="sistema__anti__incendio">
+										<label for="sistema__anti__incendio">
+											<p>Sistema anti-incêndio</p>
+										</label>						
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="group__field">
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="gerador" name="gerador">
+										<label for="gerador">
+											<p>Gerador</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="ice__maker" name="ice__maker">
+										<label for="ice__maker">
+											<p>Ice maker</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="piloto__automatico" name="piloto__automatico">
+										<label for="piloto__automatico">
+											<p>Piloto automático</p>
+										</label>						
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="group__field">	
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="boiler" name="boiler">
+										<label for="boiler">
+											<p>Boiler</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="tv" name="tv">
+										<label for="tv">
+											<p>TV</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="bow__thruster" name="bow__thruster">
+										<label for="bow__thruster">
+											<p>Bow thruster</p>
+										</label>						
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="group__field">	
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="sonda" name="sonda">
+										<label for="sonda">
+											<p>Sonda</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="automacao__de__som" name="automacao__de__som">
+										<label for="automacao__de__som">
+											<p>Automação de som</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="stern__thruster" name="stern__thruster">
+										<label for="stern__thruster">
+											<p>Stern thruster</p>
+										</label>						
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="group__field">
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="radar" name="radar">
+										<label for="radar">
+											<p>Radar</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="churrasqueira__eletrica" name="churrasqueira__eletrica">
+										<label for="churrasqueira__eletrica">
+											<p>Churrasqueira Elétrica</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="sky" name="sky">
+										<label for="sky">
+											<p>Sky</p>
+										</label>						
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="group__field">	
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="churrasqueira__a__carvao" name="churrasqueira__a__carvao">
+										<label for="churrasqueira__a__carvao">
+											<p>Churrasqueira a Carvão</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="farol__eletrico" name="farol__eletrico">
+										<label for="farol__eletrico">
+											<p>Farol elétrico</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="passarela__hidraulica" name="passarela__hidraulica">
+										<label for="passarela__hidraulica">
+											<p>Passarela hidráulica</p>
+										</label>						
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="group__field">
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="guincho__eletrico" name="guincho__eletrico">
+										<label for="guincho__eletrico">
+											<p>Guincho elétrico</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="area__gourmet" name="area__gourmet">
+										<label for="area__gourmet">
+											<p>Área gourmet na Popa</p>
+										</label>						
+									</div>
+								</div>
+									
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="plataforma__hidraulica" name="plataforma__hidraulica">
+										<label for="plataforma__hidraulica">
+											<p>Plataforma hidráulica</p>
+										</label>						
+									</div>
+								</div>							
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="group__field">
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="joystick" name="joystick">
+										<label for="joystick">
+											<p>Joystick</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="salvatagem__completa" name="salvatagem__completa">
+										<label for="salvatagem__completa">
+											<p>Salvatagem Completa</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="cozinha__completa" name="cozinha__completa">
+										<label for="cozinha__completa">
+											<p>Cozinha Completa</p>
+										</label>						
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="field">
+							<div class="group__field">
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="defletor__de__radar" name="defletor__de__radar">
+										<label for="defletor__de__radar">
+											<p>Defletor de Radar</p>
+										</label>						
+									</div>
+								</div>
+								
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="toldo__eletrico" name="toldo__eletrico">
+										<label for="toldo__eletrico">
+											<p>Toldo Elétrico</p>
+										</label>						
+									</div>
+								</div>
+
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="toldo__manual" name="toldo__manual">
+										<label for="toldo__manual">
+											<p>Toldo Manual</p>
+										</label>						
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="group__field">
+								<div class="field">
+									<div class="container__checkbox">
+										<input type="checkbox" id="bote__de__apoio" name="bote__de__apoio">
+										<label for="bote__de__apoio">
+											<p>Bote de apoio</p>
+										</label>						
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="group__field">
+							<div class="field">
+								<div class="field">
+									<label>Nome do marinheiro:</label>
+									<input type="text" class="input required" placeholder="Digite aqui">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="field">
+									<label>Telefone:</label>
+									<input type="text" class="input telefone required" placeholder="Telefone">
+									<div class="formulario_error_mensagem">
+										Este campo deve ser preenchido
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<label>Faça o Upload das fotos de seu barco</label>
+						<div class="custom-file">
+							<input type="file" class="custom-file-input" id="file" multiple onchange="javascript:updateList()">
+							<label class="custom-file-label" for="file">
+								<i class="fa-solid fa-upload"></i> Upload
+						</div>
+						<ul id="fileList" class="file-list"></ul>
+					</div>
+
+					<div class="field">
+						<label>Mais Informações</label>
+						<div class="editor"></div>
+					</div>
+
+		
+					<div class="field">
+						<div class="container__checkbox">
+							<input type="checkbox" id="aceite" name="aceite">
+							<label for="aceite">
+								<p>Concordo e aceito em pagar 6% de comissão pela venda e 20% de comissão pela locação efetuada pela empresa Leo Yacht Broker LTDA, CNPj: 10.712.444/0001-03.</p>
+							</label>						
+						</div>
+					</div>
+						
+	
+					
+					<div class="field">
+						<button type="submit" class="btn__enviar">Enviar</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="sitemap">
+			<div class="center">
+				<div class="container__flex">
+					<div class="footer__col">
+						<h5>Menu</h5>
+						<nav class="site__menu__footer">
+							<ul>
+								<li><a href="quem-somos.html" class="nav__link">Quem Somos</a></li>
+								<li><a href="embarcacoes-novas.html" class="nav__link">Embarcações Novas</a></li>
+								<li><a href="seminovos.html" class="nav__link">Seminovos</a></li>	
+								<li><a href="locacao.html" class="nav__link">Locação</a></li>
+								<li><a href="turismo.html" class="nav__link">Turismo</a></li>
+								<li><a href="anuncie.html" class="nav__link">Anuncie Aqui</a></li> 
+								<li><a href="contato.html" class="nav__link">Contato</a></li>								
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__col">
+						<div class="footer__contato">
+							<h5>Contato</h5>
+							<ul>
+								<li><i class="fas fa-map-marker-alt"></i>
+									<p>Rodovia Mário Covas (BR 101), Km 469,5 - Jacuecanga - CEP: 23914-345</p>
+								</li>
+								<li><i class="fas fa-envelope"></i>
+									<p>contato@leobroker.com.br</p>
+								</li>
+								<li><i class="fas fa-phone"></i>
+									<p>(24) 99866-3001</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__social">
+							<h6>Acompanhe em nossas redes</h6>
+							<nav class="social__links">
+								<ul>
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__partner">                                
+							<figure><img src="../images/logoLeoFooter.png" alt="Logo LeoBroker" title="Logo LeoBroker" class="logoFooter"></figure>
+							<br>
+							<p>Our huge list of partner market is lorem ipsum dolor sit consectetur amet, adipisicing elit. Suscipit, incidunt vero quod numquam tempore quia ipsa.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<div class="center">
+				<p>Copyright © 2023. Todos direitos reservados.</p>
+			</div>
+		</div>
+	</footer>
+
+	<a href="https://api.whatsapp.com/send?phone=5524998663001" class="link__whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+	<a href="../" class="link__modal__visualizacao" data-fancybox data-src="#sucesso">Modal Sucesso</a><br>
+	<a href="../" class="link__modal__visualizacao" data-fancybox data-src="#erro">Modal Erro</a><br>
+
+	<!--Modal Sucesso-->
+	<div class="modal" id="sucesso">
+		<div class="content">			
+			<div class="header__modal">		
+				<div class="icon__modal">
+					<i class="fas fa-check"></i>
+				</div>					
+			</div>
+
+			<h2 class="txt__titulo__modal">Mensagem enviada com sucesso!</h2>
+
+			<a href="#" data-fancybox-close class="btn__modal__voltar">Voltar</a>
+		</div>
+	</div>
+	<!--Fim Modal Sucesso-->
+
+	<!--Modal Erro-->
+	<div class="modal" id="erro">
+		<div class="content">			
+			<div class="header__modal">		
+				<div class="icon__modal">
+					<i class="fa-light fa-circle-exclamation"></i>
+				</div>					
+			</div>
+
+			<h2 class="txt__titulo__modal">Um Erro foi Encontrado!</h2>
+		</div>
+	</div>
+	<!--Fim Modal Erro-->
+</body>
+</html>
+<script type="text/javascript" src="../scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.min.js"></script>
+<script type="text/javascript" src="../scripts/main.js"></script>
+<script type="text/javascript" src="../scripts/jquery.mask.min.js"></script>
+<script src="../scripts/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js" integrity="sha512-fDGBclS3HUysEBIKooKWFDEWWORoA20n60OwY7OSYgxGEew9s7NgDaPkj7gqQcVXnASPvZAiFW8DiytstdlGtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+<script src="../scripts/ckeditor/ckeditor.js"></script>
+<script>ClassicEditor
+		.create( document.querySelector( '.editor' ), {					
+			licenseKey: '',	
+		} )
+		.then( editor => {
+			window.editor = editor;
+		} )
+		.catch( error => {
+			console.error( 'Oops, something went wrong!' );
+				console.error( error );
+		} );
+</script>
+<script>
+	$(document).ready(function(){
+		$('.site__menu li:nth-child(6) .nav__link').addClass('active');
+	});
+</script>

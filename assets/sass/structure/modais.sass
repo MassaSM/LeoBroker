@@ -1,0 +1,67 @@
+.modal
+    width: 100%
+    max-width: 368px!important
+    display: none
+    position: relative
+    background: $cor1!important
+    border-radius: 8px
+
+.header__modal    
+    padding: 0
+    .icon__modal
+        @include flexbox
+        @include center
+        align-items: center
+        border-radius: 50%
+        margin: 0 auto 3rem
+        i
+            font-size: 12rem
+            color: $cor5
+
+.txt__titulo__modal
+    font-size: 2.5rem
+    line-height: 3rem
+    font-weight: $bold
+    text-align: center
+    text-transform: uppercase
+
+.txt__modal
+    font-size: 1.8rem
+    line-height: 2.5rem
+    text-align: center
+    max-width: 280px
+    margin: 1.8rem auto 5.4rem
+
+.fancybox-content
+    padding: 2.4rem!important
+    // .content
+    //     padding: 32px
+
+.fancybox-button--zoom
+    display: none!important
+
+.link__modal__visualizacao
+    color: $white
+    font-size: 1.6rem
+    margin: 2.4rem 0 0
+    display: block
+
+
+#sucesso, #erro
+    .txt__titulo__modal
+        margin: 0 auto 5.7rem
+        color: $preto
+        font-size: 2.4rem
+        line-height: 3.2rem
+        font-weight: $bold
+        text-transform: uppercase
+
+.btn__modal__voltar
+    font-size: 1rem
+    font-weight: $bold
+    line-height: 3.2rem
+    text-transform: uppercase
+    letter-spacing: .2rem
+    color: $cor5
+    text-align: center
+    display: block

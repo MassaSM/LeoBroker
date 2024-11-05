@@ -1,0 +1,61 @@
+$bp-extralarge: 1440px //1280px
+$bp-large: 1200px//1100px
+$bp-medium: 950px//880px
+$bp-small-medium: 720px
+$bp-small: 640px//600px
+$bp-extrasmall: 375px//400px
+
+@mixin breakpoint($point)
+	@if $point == fullhd
+		@media only screen and (max-width: $bp-extralarge)
+			@content
+	@else if $point == desktop
+		@media only screen and (max-width: $bp-large)
+			@content
+	@else if $point == tablet
+		@media only screen and (max-width: $bp-medium)
+			@content
+	@else if $point == tabletM
+		@media only screen and (max-width: $bp-small-medium)
+			@content
+	@else if $point == mobile
+		@media only screen and (max-width: $bp-small)
+			@content
+	@else if $point == iphone
+		@media only screen and (max-width: $bp-extrasmall)
+			@content
+
+@mixin flexbox
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex		
+
+@mixin flexwrap
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+
+@mixin justify
+	-webkit-box-pack: justify
+	-ms-flex-pack: justify
+	justify-content: space-between
+
+@mixin grid
+	display: grid
+	display: -ms-grid
+	
+@mixin center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+
+@mixin sombra
+	-webkit-appearance: none
+	-webkit-box-shadow: 3px 6px 18px 0px rgba(0,0,0,0.1)
+	-moz-box-shadow: 3px 6px 18px 0px rgba(0,0,0,0.1)
+	box-shadow: 3px 6px 18px 0px rgba(0,0,0,0.1)
+
+@mixin fixed
+	position: absolute	
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)

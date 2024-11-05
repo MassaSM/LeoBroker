@@ -1,0 +1,43 @@
+.tr__flex
+    padding: 1.2rem 0
+    &:not(:last-child)
+        border-bottom: solid 1px $preto
+    @include breakpoint(fullhd)
+        @include flexbox
+        @include flexwrap
+        border: solid 1px $cor7
+        padding: 4rem
+        &:not(:last-child)
+            margin-bottom: 4rem
+        &:not(:last-child)
+            border-bottom: solid 1px $white
+    @include breakpoint(mobile)
+        padding: 2rem
+td
+    vertical-align: middle
+    margin: 0 .8rem
+    color: $white
+    @include breakpoint(fullhd)
+        width: 100%
+thead
+    font-weight: $bold
+    @include breakpoint(fullhd)
+        display: none
+
+tbody
+    tr
+        td
+            &:first-child
+                width: 150px
+                @include breakpoint(fullhd)
+                    width: initial
+
+
+.titTbMobile
+    display: none
+    font-weight: $bold
+    color: $white
+    @include breakpoint(fullhd)
+        display: block
+        margin-top: 2.4rem
+        margin-bottom: 1rem

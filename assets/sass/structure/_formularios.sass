@@ -1,0 +1,509 @@
+.field, field
+    width: 100%
+    display: block
+    position: relative
+    &:not(:last-child)
+        margin-bottom: 3.2rem
+    p
+        font-size: 1.4rem
+        line-height: 2.4rem
+        font-weight: $light
+        color: $cor1
+        margin: 0 0 1rem 1.6rem
+        a
+            color: $cor5
+            text-decoration: underline
+
+.group__field
+    @include flexbox
+    gap: 1.8rem
+    align-items: baseline
+    @include breakpoint(mobile)
+        @include flexwrap
+    .field
+        &:not(:last-child)
+            margin-bottom: 0rem
+
+
+.input
+    width: 100%
+    height: 62px
+    padding: 1.5rem 2.2rem
+    font-size: 2rem
+    font-weight: $light
+    background: $cor6   
+    color: $white
+    border-radius: .8rem
+    font-size: 2rem
+    border: none
+    border: solid 2px $cor7
+    transition: all .2s ease-in-out
+    &:hover
+        box-shadow: 0px 5px 50px #ebebeb
+    &:focus
+        box-shadow: 0px 5px 50px #ebebeb
+
+.input__date
+    font-size: 1.5rem
+
+.input__area
+    width: 100%
+    height: 210px
+    padding: 1.5rem 2.2rem
+    font-size: 2rem
+    background: transparent
+    border-radius: .8rem
+    background: $cor6
+    border: none
+    color: $white
+    resize: none
+    border: solid 2px $cor7
+    transition: all .2s ease-in-out
+    &:hover
+        box-shadow: 0px 5px 50px #ebebeb
+    &:focus
+        box-shadow: 0px 5px 50px #ebebeb
+
+label
+    display: block
+    font-size: 2rem
+    padding: 0rem 2.2rem
+    line-height: 2.4rem
+    color: $white
+    margin-bottom: .8rem
+
+/*Placeholder*/
+.input::-webkit-input-placeholder, .input__area::-webkit-input-placeholder
+    font-size: 2rem
+    color: $white
+
+.input:-moz-placeholder, .input__area:-moz-placeholder
+    font-size: 2rem
+    color: $white
+
+.input::-moz-placeholder, .input__area::-moz-placeholder
+    font-size: 2rem
+    color: $white
+
+.input:-ms-input-placeholder, .input__area:-ms-input-placeholder
+    font-size: 2rem
+    color: $white
+
+/*Formulário Mensagem Erro*/
+.formulario_error_box, .input.formulario_error_box
+    border: solid 1px $cor1
+    box-shadow: inset 0 0 0 1px $cor1!important
+.formulario_error_mensagem
+    display: none
+    color: $cor1
+    width: 100%
+    z-index: 2
+    font-size: 1.4rem
+    margin-top: 1rem
+
+/*Select*/
+select 
+    appearance: none
+    background-color: transparent
+    border: none
+    padding: 0 1em 0 0
+    margin: 0
+    width: 100%
+    font-family: inherit
+    font-size: inherit
+    cursor: inherit
+    line-height: inherit
+    z-index: 1
+    outline: none
+    color: $white
+    padding: 0.25em 0.5em
+    option
+        background: $cor6
+        color: $white
+        padding: 2rem 3rem
+
+
+.select 
+    display: grid
+    grid-template-areas: "select"
+    align-items: center
+    position: relative
+    font-size: 1.25rem
+    cursor: pointer
+    line-height: 1.1
+    width: 100%
+    height: 62px
+    background: $cor6
+    color: $white
+    border: solid 2px $cor7
+    font-size: 2rem
+    border-radius: 0.8rem
+    transition: all .2s ease-in-out
+    &:hover
+        box-shadow: 0px 5px 50px #ebebeb
+
+.select select,
+.select::after 
+    grid-area: select
+
+.select:not(.select--multiple)::after 
+    content: ""
+    justify-self: end
+    width: 0.8em
+    height: 0.5em
+    background-color: $cor7
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%)
+    margin-right: 10px
+
+select:focus + .focus 
+    position: absolute
+    top: -1px
+    left: -1px
+    right: -1px
+    bottom: -1px
+    border: 2px solid $cor7
+    border-radius: inherit
+
+
+
+// .select 
+//     position: relative
+//     height: auto
+//     padding: 0px
+//     text-align: left
+// .select select 
+//     display: none
+// .select-selected:after 
+//     position: absolute
+//     content: ""
+//     right: 22px
+//     background: url(../../images/arrow-select.png) no-repeat
+//     width: 10px
+//     height: 5px
+//     top: 50%
+// .select-selected:before 
+//     position: absolute
+//     content: ""
+//     top: 18px
+//     right: 10px
+//     width: 0
+//     height: 0
+//     background: url(../../images/arrow-select.png) no-repeat
+//     transform: rotate(180deg)
+// .select-selected.select-arrow-active:before 
+//     border: none
+// .select-selected.select-arrow-active:after 
+//     transform: rotate(180deg)
+// .select-items div,.select-selected     
+//     transition: all .2s ease-in-out
+//     color: $white
+//     padding: 21px 25px
+//     background: $cor6
+//     border: 2px solid $cor7
+//     cursor: pointer
+// .select-selected
+//     border-radius: .8rem
+//     &:hover
+//         box-shadow: 0px 5px 50px #ebebeb
+//     &:focus
+//         box-shadow: 0px 5px 50px #ebebeb
+
+// .select-selected.formulario_error_box
+//     border: solid 1px $cor1
+//     box-shadow: inset 0 0 0 1px $cor1!important
+
+// .select-items div
+//     background: $cor7
+// .select-items 
+//     position: absolute
+//     background-color: $cor7
+//     top: 100%
+//     left: 0
+//     right: 0
+//     z-index: 99
+//     max-height: 200px
+//     overflow: auto
+//     // padding: 0 10px
+// .select-hide 
+//     display: none
+// .select-items div:hover, .same-as-selected 
+//     background-color: rgba(0, 0, 0, 0.1)
+
+// .select-items div:first-child
+//     display: none
+
+/*Input Range*/
+input[type=range] 
+    -webkit-appearance: none 
+    margin: 1rem 0 
+    width: 100% 
+    position: absolute 
+    margin: 0 
+    top: -5px
+    left: 0 
+input[type=range]:focus 
+    outline: none 
+    &::-webkit-slider-runnable-track 
+        background: $cor1
+    &::-ms-fill-lower 
+        background: $cor1
+    &::-ms-fill-upper 
+        background: $cor1
+input[type=range]::-webkit-slider-runnable-track 
+    width: 100% 
+    height: 0px 
+    cursor: pointer 
+    animate: 0.2s 
+    box-shadow: 2px 2px 2px transparent, 0px 0px 2px rgba(13,13,13,0) 
+    background: #424242 
+    border-radius: 0 
+    border: 0 solid transparent 
+input[type=range]::-webkit-slider-thumb 
+    box-shadow: 1px 1px 1px transparent, 0px 0px 1px rgba(13,13,13,0) 
+    border: 0 solid white 
+    height: 1.5rem 
+    width: 1.5rem 
+    border-radius: 50% 
+    background: $cor1
+    cursor: pointer 
+    -webkit-appearance: none 
+    margin-top: -1px 
+input[type=range]::-moz-range-track 
+    width: 100% 
+    height: 0px 
+    cursor: pointer 
+    animate: 0.2s 
+    box-shadow: 2px 2px 2px transparent, 0px 0px 2px rgba(13,13,13,0) 
+    background: $cor1
+    border-radius: 0 
+    border: 0 solid transparent 
+input[type=range]::-moz-range-thumb 
+    box-shadow: 1px 1px 1px transparent, 0px 0px 1px rgba(13,13,13,0) 
+    border: 0 solid white 
+     height: 1.5rem 
+    width: 1.5rem 
+    border-radius: 50% 
+    background: $cor1
+    cursor: pointer 
+input[type=range]::-ms-track 
+    width: 100% 
+    height: 0px 
+    cursor: pointer 
+    animate: 0.2s 
+    background: transparent 
+    border-color: transparent 
+    border-width: 2rem 0 
+    color: transparent 
+input[type=range]::-ms-fill-lower 
+    background: $cor1
+    border: 0 solid transparent 
+    border-radius: 0 
+    box-shadow: 2px 2px 2px transparent, 0px 0px 2px rgba(13,13,13,0) 
+input[type=range]::-ms-fill-upper 
+    background: $cor1
+    border: 0 solid transparent 
+    border-radius: 0 
+    box-shadow: 2px 2px 2px transparent, 0px 0px 2px rgba(13,13,13,0) 
+input[type=range]::-ms-thumb 
+    box-shadow: 1px 1px 1px transparent, 0px 0px 1px rgba(13,13,13,0) 
+    border: 0 solid white 
+    height: 1.5rem 
+    width: 1.5rem 
+    border-radius: 50% 
+    background: $cor1
+    cursor: pointer 
+fieldset 
+    position: relative 
+    box-sizing: border-box 
+    height: .4rem 
+    padding: 0
+    background: $cor1 
+    margin-bottom: 1.4rem
+    border-radius: .8rem
+#input_1 
+    &::-moz-range-thumb 
+        background-color: $cor1
+    &::-ms-thumb 
+        background-color: $cor1
+    &::-webkit-slider-thumb 
+        background-color: $cor1
+#input_2 
+    &::-moz-range-thumb 
+        background-color: $cor1
+    &::-ms-thumb 
+        background-color: $cor1
+    &::-webkit-slider-thumb 
+        background-color: $cor1
+
+.titulo__range
+    color: $white!important
+    margin: 0 0 1.2rem!important
+    font-weight: $bold!important
+
+.ano__inicial,
+.ano__final,
+.capacidade__inicial,
+.capacidade__final,
+.valor__minimo,
+.valor__maximo,
+.tamanho__inicial,
+.tamanho__final,
+.quartos__inicial,
+.quartos__final
+    color: $cor1
+    font-weight: $bold
+
+.opcoes__embarcacoes
+    margin-bottom: 3.2rem
+    .field:not(:last-child), field:not(:last-child)
+        margin-bottom: .8rem
+
+/*Checkbox*/
+.container__checkbox
+    @include flexbox
+    align-items: center
+    gap: 1.3rem
+    label, p
+        padding: 0
+        margin: 0
+    p
+        font-size: 1.6rem
+
+input[type=checkbox]
+    + label
+        margin: 0.2rem
+        cursor: pointer
+        padding: 0.2rem
+        @include flexbox
+        align-items: center
+        gap: 1.3rem
+        &:before
+            content: "\2714"
+            border: solid 1px $cor2
+            border-radius: 0.2rem
+            display: inline-block
+            min-width: 18px
+            width: 18px
+            height: 18px
+            padding-left: 0.3rem
+            padding-bottom: 0.3rem
+            margin-right: 0.2rem
+            vertical-align: bottom
+            color: transparent
+            transition: .2s
+            border-radius: 2px
+            line-height: 16px
+            font-size: 1.4rem
+        &:active:before
+            transform: scale(0)
+    display: none
+    &:checked + label:before
+        background-color: $cor5
+        border-color: $cor5
+        color: #fff
+    &:disabled + label:before
+        transform: scale(1)
+        border-color: #aaa
+    &:checked:disabled + label:before
+        transform: scale(1)
+        background-color: #bfb
+        border-color: #bfb
+
+/*Upload*/
+.custom-file
+    position: relative
+    font-family: arial
+    overflow: hidden
+    margin-bottom: 10px
+    width: auto
+    display: inline-block
+    padding: 10px
+.custom-file-input
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    cursor: pointer
+    opacity: 0
+    z-index: 100
+
+.custom-file-label
+    border: solid 4px $cor1
+    padding: 1.6rem 6rem
+    color: $cor1
+    font-size: 1.6rem
+    text-transform: uppercase
+    i
+        margin-right: 1.4rem
+
+.custom-file img
+    display: inline-block
+    vertical-align: middle
+    margin-right: 5px
+
+ul.file-list
+    font-family: arial
+    list-style: none
+    padding: 0
+    li
+        border-bottom: 1px solid #ddd
+        padding: 8px 0
+        color: $white
+
+.remove-list
+    cursor: pointer
+    margin-left: 10px
+
+/*Ckeditor*/
+.editor__editable,
+main .ck-editor[role='application'] .ck.ck-content,
+.ck.editor__editable[role='textbox'],
+.ck.ck-editor__editable[role='textbox'],
+.ck.editor[role='textbox']
+    width: 100%
+    background: #fff
+    font-size: 1em
+    line-height: 1.6em
+    min-height: 300px
+    padding: 1.5em 2em
+
+.ck.ck-editor__editable
+    background: #fff
+    border: 1px solid hsl(0, 0%, 70%)
+    width: 100%
+
+.ck.ck-editor__editable
+    position: relative
+    z-index: 10
+
+.editor-container
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    position: relative
+    width: 100%
+    justify-content: center
+
+.ck.ck-editor__editable_inline p
+    color: initial
+    margin: 0
+
+/*Barra de Rolagem*/
+select::-webkit-scrollbar-track 
+    -webkit-box-shadow: inset 0 0 6px rgba($preto,0.3)
+    border-radius: 10px
+    background-color: $cor9
+
+
+select::-webkit-scrollbar 
+    width: 12px
+    border-radius: 10px
+    background-color: $cor9
+
+
+select::-webkit-scrollbar-thumb 
+    border-radius: 10px
+    height: 30px
+    -webkit-box-shadow: inset 0 0 6px rgba($preto,.3)
+    background-color: $cor6
